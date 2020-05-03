@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbari {
+    width: 100%;
+    height: 110px;
+    background-size: cover;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    /* background-image: url(img/car/index.jpg); */
+}
+
+.logo {
+    border-style: none;
+    width: 130px;
+    height: 50px;
+    color: #2a2a2a;
+    font-size: 34px;
+    margin-left: 12%;
+    letter-spacing: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: all 0.2s;
+}
+
+.links {
+    margin-top: -32px;
+    margin-left: 45%;
+}
+
+.l {
+    cursor: pointer;
+    float: left;
+    padding-right: 30px;
+    color: #373737;
+    font-family: "Century Gothic";
+    font-weight: 900;
+    transition: all .2s;
+}
+
+.profile {
+    margin-left: 85%;
+}
+
+.topicon {
+    border-radius: 45%;
+    padding: 10px;
+    background-color: aliceblue;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    z-index: 1000;
+}
+
+.container {
+    width: 80%;
+    margin: 80px auto 0 auto;
+}
+
+.sub-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.sub-header .close-btn {
+    font-size: 30px;
+    color: #c8ad78;
+    cursor: pointer;
+}
+
+.sub-header .title {
+    line-height: 1;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+.sub-header .title span {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: lowercase;
+    color: #c8ad78;
+}
+
+.thumb-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thumb-unit {
+    width: 18%;
+    margin: 0 0.5% 20px 0.5%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+
+.thumb-unit:hover {
+    border: none;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+    z-index: 1000;
+    background: white;
+}
+
+.thumb-unit:nth-child(1) .box {
+    background-image: url(img/deals/femefm.jpeg);
+}
+
+.thumb-unit:nth-child(2) .box {
+    background-image: url(img/deals/femefm.jpeg);
+}
+
+.thumb-unit:nth-child(3) .box {
+    background-image: url(img/deals/femefm.jpeg);
+}
+
+.thumb-unit:nth-child(4) .box {
+    background-image: url(img/deals/femefm.jpeg);
+}
+
+.thumb-unit:nth-child(5) .box {
+    background-image: url(img/deals/femefm.jpeg);
+}
+
+.thumb-unit:nth-child(6) .box {
+    background-image: url(img/deals/femefm.jpeg);
+}
+
+.thumb-unit:nth-child(8) .box {
+    background-image: url(img/deals/femefm.jpeg);
+}
+
+.thumb-unit:nth-child(9) .box {
+    background-image: url(img/deals/femefm.jpeg);
+}
+
+.thumb-unit:nth-child(10) .box {
+    background-image: url(img/deals/femefm.jpeg);
+}
+
+.thumb-unit:nth-child(7) .box {
+    background-image: url(img/deals/femefm.jpeg);
+}
+
+.thumb-unit .heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.thumb-unit .heading span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.thumb-unit .box {
+    width: 100%;
+    margin: 10px 0px;
+    transition: all ease-in-out 300ms;
+    background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXPoeXWgsnGXHUV281dC1GJF95aPYl-F0WcQ1ZG5UJ4P3xc9n81Q);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.thumb-unit .box:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.thumb-unit .info {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.2;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.thumb-unit .info .icon {
+    font-size: 20px;
+    color: #c8ad78;
+}
+
+@media (max-width: 1200px) {
+    .thumb-unit {
+        width: 31.33%;
+        margin: 0px 0.5% 20px 0.5%;
+    }
+}
+
+@media (max-width: 640px) {
+    .thumb-unit {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .navigation {
+        display: none;
+    }
+}
