@@ -29,6 +29,11 @@ app.get("/error", function(req, res) {
     res.render("error.ejs");
 });
 
+//Accounts Page
+app.get("/accounts", function(req, res) {
+    res.render("accounts.ejs");
+});
+
 app.get("*", function(req, res) {
     res.send("NO MATCH FOUND");
 });
