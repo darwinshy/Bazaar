@@ -3,7 +3,7 @@ var router = express.Router();
 
 //Requiring Models
 var User = require("../models/user");
-var Comment = require("../models/wishlist");
+var Wishlist = require("../models/wishlist");
 
 
 
@@ -32,7 +32,7 @@ router.post("/users/:id/wishlists", isLoggedIn, function(req, res) {
                     user.wishlist.push(wishlist);
                     user.save();
                     //redirect
-                    res.redirect("/users/" + campground._id);
+                    res.redirect("/users/" + user._id);
 
                 }
             })
