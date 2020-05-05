@@ -4,6 +4,8 @@ var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 var methodOverride = require('method-override');
 
+var User=require("./models/user");
+var Wishlist=require("./models/wishlist");
 
 
 mongoose.connect("mongodb+srv://user:3wQN4sc3OGC3hlSc@cluster0-amz9t.gcp.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true });
